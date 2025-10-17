@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invol Education</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fdfdfd;
+    }
+    header {
+      background: linear-gradient(rgba(0, 33, 71, 0.8), rgba(0, 33, 71, 0.8)), url('https://mediadepot.fra1.digitaloceanspaces.com/kingscamapps/s3fs-public/web-images/TOURISM_2025/wildflower-meadow-daisies-with-chapel-in-centre-distance_landscape-2021_martin-bond.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header img {
+      width: 480px;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1.5s ease;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      animation: fadeInUp 2s ease;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      animation: fadeInUp 2.5s ease;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      padding: 0.75rem;
+      text-align: center;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #002147;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #0055cc;
+    }
+    section {
+      padding: 4rem 10%;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section:nth-child(even) {
+      background: #f9f9f9;
+    }
+    h2 {
+      color: #002147;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .team-member {
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input, .contact-form textarea, .contact-form button {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #002147;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background: #0055cc;
+    }
+    footer {
+      background: #002147;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="invol education logo.svg" alt="Invol Education Logo">
+    <h1>Invol Education</h1>
+    <p>Oxbridge-standard coaching for ambitious students</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#strengths">Strengths</a>
+    <a href="#team">Team</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>Who We Are</h2>
+    <p>We are an education start-up founded in King's College, Cambridge. All our members, from our founder to our teachers, have been enrolled at Cambridge or Oxford. Our members are experienced. Over the past 8 years, we have sent more than 30 students to Cambridge and Oxford, and every student we coached has received offers from G5 universities. We provide top-notch, highly personalised education and application coaching for students targeting Oxbridge and G5 universities. We take pride in being educators. We believe the application process is a process of self revelation and growth, and we help students discover their passions and shine. We forge paths tailored to each student's specific needs to help our students achieve their ambitions. In the past, we have worked individually; now, we are starting off as a team.</p>
+  </section>
+
+  <section id="strengths">
+    <h2>Strengths</h2>
+    <ul>
+      <li><strong>Our all-Oxbridge team guarantees quality</strong><p>We know what is expected of a successful Oxbridge applicant, and we weave the Oxbridge standard into our curriculum to match our students with the highest requirements.</p></li>
+      <li><strong>We are veterans of the application process</strong><p>We have experienced the application process as well as the anxiety, fear and dread that comes with it. We empathise with students and their parents, and have largely maintained good relationships. </p></li>
+      <li><strong>We offer customised service</strong><p>Unlike most application institutions in the industry, we take great care to identify each student's personalised needs, and use our expertise to guide our students to their destination. The growth paths among students are hugely different; using a factory-line approach usually ends in dissatisfaction. </p></li>
+      <li><strong>We know the rules</strong><p>We keep close touch with professors who made application decisions, and some of our teachers even participated in the decision-making process of Oxbridge undergraduate application. Therefore, we have unique insights in the qualities Oxbridge is looking for as well as the common mistakes applicants make. We make proactive efforts when coaching students to prepare for application. </p></li>
+      <li><strong>We offer Oxbridge-standard education</strong><p>We extract the essence of what we learned in Oxbridge and teach them to our students. Our teachers focus not only on the knowledge itself, but also more importantly on the Oxbridge mindset – the rigour in reasoning, the focus on clarity and precision, the practice of systematic learning and so on, and mastering this mindset will pay huge dividends. Every student of ours can enjoy an Oxbridge experience, no matter their application result. </p></li>
+
+    </ul>
+  </section>
+
+  <section id="team">
+    <h2>Core Team Members</h2>
+    <div class="team">
+      <div class="team-member">
+        <h3>Dr. Jinze Sha</h3>
+        <p>Founder of Invol Education. Eight years at King's College, Cambridge (BA, MEng, PhD in Engineering). He is also an honour graduate from Suzhou Foreign Language School and is well-respected by his alumni. While completing his PhD, he supervised Engineering undergraduates in Cambridge, and many of his students went on to achieve first class degrees. He has unrivalled passion in Engineering and has published 15 papers.  Currently a Research Fellow at the Department of Aeronautical and Astronautical Engineering at the University of Southampton.</p>
+      </div>
+      <div class="team-member">
+        <h3>Thomas Wang</h3>
+        <p> Economics undergraduate in King's College, Cambridge. He spent seven years in Shanghai Starriver Bilingual School, where he was awarded honour graduate. He achieved international top ten in the National Economics Challenge and carried his form into Cambridge, where he received King's College Scholarship for his stellar academic performance. Thomas also has a special affection for literature and writing. In Cambridge, students would count on him to edit their personal statements, cover letters and even doctoral dissertations, and his mastery of language was always trusted by his peers.</p>
+      </div>
+      <div class="team-member">
+        <h3>Andy Fish</h3>
+        <p> Architecture Undergraduate in King's College, Cambridge.</p>
+      </div>
+    </div>
+    <h2>Affiliated Teachers</h2>
+    <div class="team">
+      <div class="team-member">
+        <h3>Antoni</h3>
+        <p>Natural Science undergraduate from Oxford, and a current Engineering PhD student from St John's College, Cambridge. He has been an interviewer and course supervisor at Cambridge during his PhD study.</p>
+      </div>
+      <div class="team-member">
+        <h3>Yin</h3>
+        <p>Natural Sciences undergraduate from Clare College, Cambridge, with a focus on Biochemical sciences. Supervised Cambridge Natural Science undergraduates and interviewed Cambridge applicants. Over 8 years of coaching experience.</p>
+      </div>
+      <div class="team-member">
+        <h3>Trevor</h3>
+        <p>Computer Science undergraduate from Robinson College, Cambridge. Top 100 in British Mathematical Olympiad three times. He has experience in coaching all stages of the application and has sent his students into Computer Science at Cambridge, Oxford, and Imperial.</p>
+      </div>
+      <div class="team-member">
+        <h3>Yilia</h3>
+        <p>Engineering undergraduate from Newham College, Cambridge. She spent a year at the University of Hong Kong before coming to Cambridge, and has 3 years of experience coaching students towards Engineering at Oxbridge and Hong Kong universities.</p>
+      </div>
+      <div class="team-member">
+        <h3>Dennis</h3>
+        <p>Engineering undergraduate from Homerton College, Cambridge. His research focus is on computer vision and artificial intelligence. He has over 4 years of coaching experience from personal statements to interview training.</p>
+      </div>
+      <div class="team-member">
+        <h3>Yitian</h3>
+        <p>Economics undergraduate from Murray Edwards College, Cambridge. She has helped numerous students with EPQ, TMUA, AMC, personal statement, interview training and mock interviews over the past 4 years.</p>
+      </div>
+      <div class="team-member">
+        <h3>Xinghao</h3>
+        <p>Mathematics undergraduate from Christ's College, Cambridge. He got a first class for his first and second year and is a current third year student. He has coached students for Oxbridge applications for over 2 years, specialising in STEP, A-level Mathematics and Further Mathematics and MAT.</p>
+      </div>
+      <div class="team-member">
+        <h3>Sam</h3>
+        <p>Engineering undergraduate from Churchill College, Cambridge. He has a strong passion in AI and has </p>
+      </div>
+      <div class="team-member">
+        <h3>Frank</h3>
+        <p>Engineering undergraduate from Homerton College, Cambridge. </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li><strong>Supervision and research projects</strong> <p>Our customised projects usually take ten to twelve lectures. The first half of the lectures is dedicated to theoretical teaching, and our teachers have carefully selected Oxbridge course materials suitable for high school students. The second half is dedicated to the application of those theories and knowledge. Students will tackle an issue from the real world, and the result usually take the form of a short research paper or a model </p></li>
+      <li><strong>Personal statement coaching</strong> <p>This includes brainstorming, planning, writing multiple drafts and final polishing. Writing is a craft, and our teachers follow closely the writing principles of well-known authors. We take care to guide students through the writing process. Many students came in without any idea of what to write; they left with impressive personal statements rich in both accuracy and authenticity. </p></li>
+      <li><strong>Interview preparation</strong> <p>The Oxbridge interview is similar to a college supervision or tutorial. With our experience, we help students visualise the atmosphere and overcome their nerves. We use past interview questions to train our students, guiding them to respond in a clear and precise manner that is valued by Oxbridge academics. We also emphasise the soft skills, such as showing passion and confidence – skills that are crucial yet too often overlooked by Chinese applicants. </p></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:1rem;">Or email us directly at <a href="mailto:InvolEducation@outlook.com">InvolEducation@outlook.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Invol Education. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect().top;
+        if(rect < trigger) sec.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
